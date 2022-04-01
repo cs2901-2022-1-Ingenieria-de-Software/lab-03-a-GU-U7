@@ -21,15 +21,21 @@ public class ManageDemandTest {
     @BeforeClass
     public void setup() {
         tax = new Tax();
-        demand =  new ManageDemand(tax);
+        demand =  new ManageDemand();
     }
-    
+
+    @Test
     public void test_AllOrdersFromPeru() {
         List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
         double result = demand.calculateTotal(ordersFromPeru);
         Assert.assertEquals(Math.round(result), 7.0);
     }
 
-    // Add Tests !!
+    @Test
+    public void test_PeruOrdersCustokm(){
+        List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
+        double result = demand.calculateTotalForWithAdditionalByCountry(ordersFromPeru, TaxTest.getCustomTax());
+        Assert.assertEquals(Math.round(result),12);
+    }
 
 }
