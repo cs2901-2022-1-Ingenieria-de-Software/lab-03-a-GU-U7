@@ -9,6 +9,7 @@ import lab.demand.Tax;
 import lab.util.TestUtil;
 import lab.demand.Order;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Test
@@ -36,6 +37,13 @@ public class ManageDemandTest {
         List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
         double result = demand.calculateTotalForWithAdditionalByCountry(ordersFromPeru, TaxTest.getCustomTax());
         Assert.assertEquals(Math.round(result),12);
+    }
+
+    @Test
+    public void test_EmptyList(){
+        List<Order> emptyList = new ArrayList<Order>();
+        double result = demand.calculateTotal(emptyList);
+        Assert.assertEquals(Math.round(result), 0);
     }
 
 }
