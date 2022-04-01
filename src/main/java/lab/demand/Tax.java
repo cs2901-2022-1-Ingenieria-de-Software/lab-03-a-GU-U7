@@ -16,9 +16,8 @@ public class Tax {
             return defaultAdditionalPeru;
         } else if (country.equals("BR")) {
             return defaultAdditionalBrazil;
-        } else {
-            return defaultAdditional;
         }
+        return defaultAdditional;
     }
 
 }
