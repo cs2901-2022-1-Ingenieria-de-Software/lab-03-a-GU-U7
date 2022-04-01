@@ -21,4 +21,12 @@ public class TestUtil {
         return ordersPeru;
     }
 
+    public static List<Order> buildEmptyOrders(){
+        List<Order> orders = new ArrayList<Order>();
+        orders.add(new Order("", 10L));
+        orders.add(new Order("", 20L));
+        orders.add(new Order("", 105L));
+        return orders;
+    }
+
 }

@@ -53,4 +53,11 @@ public class ManageDemandTest {
         Assert.assertEquals(Math.round(result), 0);
     }
 
+    @Test
+    public void test_OrdersWithStringEmpty(){
+        List<Order> emptyOrders = TestUtil.buildEmptyOrders();
+        double result = demand.calculateTotal(emptyOrders);
+        Assert.assertEquals(Math.round(result), 0);
+    }
+
 }
