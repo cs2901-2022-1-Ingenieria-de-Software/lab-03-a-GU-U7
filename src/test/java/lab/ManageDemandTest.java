@@ -33,7 +33,7 @@ public class ManageDemandTest {
     }
 
     @Test
-    public void test_PeruOrdersCustokm(){
+    public void test_PeruOrdersCustom(){
         List<Order> ordersFromPeru = TestUtil.buildOrdersPeru();
         double result = demand.calculateTotalForWithAdditionalByCountry(ordersFromPeru, TaxTest.getCustomTax());
         Assert.assertEquals(Math.round(result),12);
@@ -43,6 +43,13 @@ public class ManageDemandTest {
     public void test_EmptyList(){
         List<Order> emptyList = new ArrayList<Order>();
         double result = demand.calculateTotal(emptyList);
+        Assert.assertEquals(Math.round(result), 0);
+    }
+
+    @Test
+    public void test_NonDefinedCountries(){
+        List<Order> notDefinedOrders = TestUtil.buildOrdersColombia();
+        double result = demand.calculateTotal(notDefinedOrders);
         Assert.assertEquals(Math.round(result), 0);
     }
 
