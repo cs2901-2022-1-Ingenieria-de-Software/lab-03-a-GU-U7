@@ -1,26 +1,26 @@
 
-clab.demand.ManageDemand#calculateTotalForWithAdditionalByCountry(Ljava/util/List;Llab/demand/Tax;)Dt
-jC:/Users/Grove/Documents/__UTEC__/Grupo 6/CS2901/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (:"1*ª
-1t
-jC:/Users/Grove/Documents/__UTEC__/Grupo 6/CS2901/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java ("€
-ý
-t
-jC:/Users/Grove/Documents/__UTEC__/Grupo 6/CS2901/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (*
+clab.demand.ManageDemand#calculateTotalForWithAdditionalByCountry(Ljava/util/List;Llab/demand/Tax;)Dˆ
+~C:/Users/Grove/github-classroom/cs2901-2022-1-Ingenieria-de-Software/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (:"1*ÿ
+1ˆ
+~C:/Users/Grove/github-classroom/cs2901-2022-1-Ingenieria-de-Software/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java ("•
+’
+ˆ
+~C:/Users/Grove/github-classroom/cs2901-2022-1-Ingenieria-de-Software/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (*
 %0double">lab.demand.ManageDemand#calculateQuantities(Ljava/util/List;)D*
 lab.demand.ManageDemand*
 
-ordersjava.util.List«
-¨
-t
-jC:/Users/Grove/Documents/__UTEC__/Grupo 6/CS2901/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java+ (M
+ordersjava.util.ListÀ
+½
+ˆ
+~C:/Users/Grove/github-classroom/cs2901-2022-1-Ingenieria-de-Software/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java+ (M
 %1double"Plab.demand.ManageDemand#calculateCountryTaxes(Ljava/util/List;Llab/demand/Tax;)D*
 lab.demand.ManageDemand*
 
 ordersjava.util.List*
 
-taxlab.demand.Tax"~
-t
-jC:/Users/Grove/Documents/__UTEC__/Grupo 6/CS2901/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (N
+taxlab.demand.Tax"“
+ˆ
+~C:/Users/Grove/github-classroom/cs2901-2022-1-Ingenieria-de-Software/lab-03-a-GU-U7/src/main/java/lab/demand/ManageDemand.java (N
 "":
 ordersjava.util.List:
 taxlab.demand.TaxB

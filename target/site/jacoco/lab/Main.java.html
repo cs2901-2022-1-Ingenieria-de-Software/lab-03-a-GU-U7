@@ -10,17 +10,17 @@ import java.util.List;
 <span class="nc" id="L10">public class Main {</span>
 
     public static void main (String [ ] args) {
-<span class="nc" id="L13">        System.out.println(&quot;===INICIO====&quot;);</span>
+<span class="nc" id="L13">        System.err.println(&quot;===INICIO====&quot;);</span>
         
 <span class="nc" id="L15">        ManageDemand mg = new ManageDemand();</span>
 
 <span class="nc" id="L17">        List&lt;Order&gt; testOrders = buildSampleOrders();</span>
         
 <span class="nc" id="L19">        double resultFirst = mg.calculateTotal(testOrders);</span>
-<span class="nc" id="L20">        System.out.println(String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst));</span>
+<span class="nc" id="L20">        System.err.println(String.format(&quot;RESULTADO TOTAL 1 =&gt; %s&quot;, resultFirst));</span>
 
 <span class="nc" id="L22">        double resultSecond = mg.calculateTotalForWithAdditionalByCountry(testOrders, new Tax(0.10, 0.20, 0.30));</span>
-<span class="nc" id="L23">        System.out.println(String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond));</span>
+<span class="nc" id="L23">        System.err.println(String.format(&quot;RESULTADO TOTAL 2 =&gt; %s&quot;, resultSecond));</span>
 <span class="nc" id="L24">    }</span>
 
     private static List&lt;Order&gt; buildSampleOrders() {
